@@ -8,15 +8,15 @@ import {images} from '../../constants'
 const galleryImages = [images.gallery01, images.gallery02, images.gallery03, images.gallery04]
 
 const Gallery = () => { 
-  const scrollRef = useRef(null)
+  const scrollRef = React.useRef(null)
 
   const scroll = (direction) => {
     const {current} = scrollRef
 
-    if(scroll === 'left'){
+    if(direction === 'left'){
       current.scrollLeft -= 300
     } else {
-      current.scrollRight += 300
+      current.scrollLeft += 300
     }
   }
   

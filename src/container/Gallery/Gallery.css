@@ -13,7 +13,7 @@
     align-items: flex-start;
     flex-direction: column;
 
-    min-width: 500px;
+    min-width: 50%;
     padding-right: 2rem;
 }
 
@@ -137,11 +137,31 @@
     }  
     
     .app__gallery-content {
-        min-width: 100%;
+        width: 100%;
     }
 
     .app__gallery-images_card {
-        min-width: 240px;
+        min-width: 15rem;
         height: 320px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .app__gallery {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .app__gallery-content{
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .app__gallery-images{
+        max-width: 100%;
+    }
+
+    .app__gallery-images_card{
+        height: 300px;
     }
 }
