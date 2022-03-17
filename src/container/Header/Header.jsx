@@ -1,24 +1,71 @@
-import React from 'react';
+import React, {useState} from 'react';
+import styled from 'styled-components';
 
 import {SubHeading} from '../../components'
 import {images} from '../../constants'
 import './Header.css';
 
-const Header = () => (
-  <div className='app__header app__wrapper section__padding' id='home'>
-    <div className='app__wrapper_info'>
-      <SubHeading title='Chase the new flavour' />
-      <h1 className='app__header-h1'>The Key to Fine Dining</h1>
-      <p className='p__opensans' style={{margin: '2rem 0'}}>
-        I'm baby skateboard enamel pin photo booth cardigan air plant offal swag kinfolk chia semiotics. Messenger bag quinoa biodiesel pork belly, thundercats twee fanny pack irony cardigan godard street art letterpress chicharrones. Four dollar toast taxidermy DIY, crucifix keytar gluten-free neutra iceland mumblecore hot chicken small batch celiac pug kinfolk ennui.
-      </p>
-      <button type='submit' className='custom__button'>Explore Menu</button>
-    </div>
+const DropDownContainer = styled("div")`
+  width: 10.5em;
+`;
 
-    <div className='app__wrapper_img'>
-      <img src={images.welcome} alt='header img' />
-    </div>
-  </div>
-);
+const DropDownListContainer = styled("div")``;
 
+const DropDownList = styled("ul")`
+  background-color: var(--color-crimson);
+  color: var(--color-black);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 16px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  width: 141px;
+  z-index: 1;
+}`;
+
+const ListItem = styled("li")`
+  list-style: none;
+  margin-bottom: 0.8em;
+`;
+
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggling = () => setIsOpen(!isOpen);
+
+  return (
+    <div className='app__header app__wrapper section__padding' id='home'>
+      <div className='app__wrapper_info'>
+        <SubHeading title='Chase the new flavour' />
+        <h1 className='app__header-h1'>A unique Italian experience</h1>
+        <p className='p__opensans' style={{margin: '2rem 0'}}>
+          I'm baby skateboard enamel pin photo booth cardigan air plant offal swag kinfolk chia semiotics. Messenger bag quinoa biodiesel pork belly, thundercats twee fanny pack irony cardigan godard street art letterpress chicharrones. Four dollar toast taxidermy DIY.
+        </p>
+        <DropDownContainer>
+          <button type='submit' className='custom__button' onClick={toggling}>Explore Menu</button>
+          {isOpen && (
+          <DropDownListContainer>
+            <DropDownList>
+              <ListItem><a href='https://pacinos.ie/wp-content/uploads/2021/08/Pac-Brunch-June-2021-PDF.pdf' target='_blank'>Brunch</a></ListItem>
+              <ListItem><a href='https://pacinos.ie/wp-content/uploads/2021/06/Pac-Lunch-June-2021-PDF.pdf' target='_blank'>Lunch</a></ListItem>
+              <ListItem><a href='https://pacinos.ie/wp-content/uploads/2021/06/Pac-Dinner-June-2021-PDF.pdf' target='_blank'>Dinner</a></ListItem>
+              <ListItem><a href='https://pacinos.ie/wp-content/uploads/2021/06/Pac-Dessert-June-2021-PDF.pdf' target='_blank'>Dessert</a></ListItem>
+            </DropDownList>
+          </DropDownListContainer>
+          )}
+        </DropDownContainer>
+      </div>
+
+      <div className='app__wrapper_img'>
+        <img src={images.header} alt='header img' />
+      </div>
+    </div>
+  );
+}
 export default Header;

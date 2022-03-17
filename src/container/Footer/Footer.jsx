@@ -13,18 +13,18 @@ const Footer = () => (
     <div className='app__footer-links'>
       <div className='app__footer-links_contact'>
         <h1 className='app__footer-headtext'>Contact Us</h1>
-        <p className='p__opensans'>9 W 53rd St, New York, NY 10019, USA</p>
-        <p className='p__opensans'>+1 212-344-1230</p>
-        <p className='p__opensans'>+1 212-555-1230</p>
+        <p className='p__opensans'>18 Suffolk Street, Dublin 2, Ireland</p>
+        <p className='p__opensans'>01 677 5651</p>
+        <a href='mail:info@pacinos.ie' className='link'>info@pacinos.ie</a>
       </div>
       <div className='app__footer-links_logo'>
-        <img src={images.gericht} alt='footer logo' />
+        <img src={images.logo} alt='footer logo' />
         <p className='p__opensans'>"The best way to find yourself is to lose yourself in the service of others."</p>
         <img src={images.spoon} alt='spoon' className='spoon__img' style={{marginTop: 15}} />
         <div className='app__footer-links_icons'>
-          <FiFacebook />
-          <FiTwitter />
-          <FiInstagram />
+          <a href='https://www.facebook.com/PacinosRestaurantDublin' target="_blank"><FiFacebook /></a>
+          <a href='https://twitter.com/pacinosdublin' target="_blank"><FiTwitter /></a>
+          <a href='https://www.instagram.com/pacinosdub/' target="_blank"><FiInstagram /></a>
         </div>
       </div>
       <div className='app__footer-links_work'>
@@ -36,7 +36,7 @@ const Footer = () => (
       </div>
     </div>
     <div className='footer__copyright'>
-      <p className='p__opensans'>2021 Gerícht. All Rights Reserved</p>
+      <p className='p__opensans'>2022 Pacino's. All Rights Reserved</p>
     </div>
   </div>
 );

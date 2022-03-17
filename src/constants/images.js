@@ -1,12 +1,17 @@
+import awards from '../assets/awards.png';
 import bg from '../assets/bg.png';
 import chef from '../assets/chef.png';
-import G from '../assets/G.png';
+import cocktail from '../assets/cocktail.png'
+import drinks from '../assets/drinks.png'
+import P from '../assets/P.png';
 import gallery01 from '../assets/gallery01.png';
 import gallery02 from '../assets/gallery02.png';
 import gallery03 from '../assets/gallery03.png';
 import gallery04 from '../assets/gallery04.png';
 import knife from '../assets/knife.png';
+import header from '../assets/header.png'
 import logo from '../assets/logo.png';
+// import meal from '../assets/meal.mov'
 import menu from '../assets/menu.png';
 import overlaybg from '../assets/overlaybg.png';
 import spoon from '../assets/spoon.svg';
@@ -22,14 +27,18 @@ import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 
 export default {
+  awards,
   bg,
   chef,
-  G,
+  cocktail,
+  drinks,
+  P,
   gallery01,
   gallery02,
   gallery03,
   gallery04,
   knife,
+  header,
   logo,
   menu,
   overlaybg,

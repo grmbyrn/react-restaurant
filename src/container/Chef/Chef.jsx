@@ -18,7 +18,7 @@ const Chef = () => (
         <div className='app__chef-content_quote'>
           <img src={images.quote} alt='quote' />
           <p className='p__opensans'>
-            Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Morbi Ante Risus, Sagittis Ac Mattis Vitae, Auctor Sit Amet Ligula. Morbi Laoreet Elementum Vehicula. Nullam Vehicula Tempor Nunc Eget Tincidunt.   
+            Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Morbi Ante Risus, Sagittis Ac Mattis Vitae, Auctor Sit Amet Ligula.   
           </p>
         </div>
         <p className='p__opensans'>

@@ -65,6 +65,19 @@
     margin-bottom: 1rem;
 }
 
+.link {
+    font-family: var(--font-alt);
+    color: var(--color-white);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 16px;
+  }
+
+.link:hover{
+    text-decoration: underline;
+}
+
 .footer__copyright{
     margin-top: 3rem;
 }

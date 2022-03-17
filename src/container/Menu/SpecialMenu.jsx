@@ -27,7 +27,7 @@ const SpecialMenu = () => (
       </div>
 
       <div className='app__specialMenu-menu_img'>
-          <img src={images.menu} alt='menu image' />
+          <img src={images.drinks} alt='menu image' />
       </div>
 
       <div className='app__specialMenu-menu_cocktails  flex-center'>
@@ -45,8 +45,8 @@ const SpecialMenu = () => (
       </div>
     </div>
 
-    <div style={{marginTop: '15px'}}>
-          <button type='button' className='custom__button'>View more</button>
+    <div>
+          <a href='https://pacinos.ie/wp-content/uploads/2021/06/PAC-Drinks-Menu-June-2021-PDF.pdf' target='_blank'><button type='button' className='custom__button'>View more</button></a>
     </div>
   </div>
 );

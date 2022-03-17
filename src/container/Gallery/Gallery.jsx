@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import {BsInstagram, BsArrowLeftShort, BsArrowRightShort} from 'react-icons/bs'
 
 import './Gallery.css';
@@ -31,7 +31,7 @@ const Gallery = () => {
           numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
           optio, eaque rerum!
         </p>
-        <button type='button' className='custom__button'>View More</button>
+        <a href='https://www.instagram.com/pacinosdub/' target='_blank'><button type='button' className='custom__button'>View More</button></a>
       </div>
 
       <div className='app__gallery-images'>

@@ -8,9 +8,21 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     line-height: 117px;
-    font-size: 4.375rem;
+    font-size: 4rem;
 }
 
 .app__header-img img {
     width: 80%;
+}
+
+@media screen and (max-width: 425px){
+    .app__aboutus-overlay img{
+        width: 80%;
+        height: 320px;
+    }
+
+    .app__header-h1{
+        font-size: 40px;
+        line-height: 60px;
+    }
 }

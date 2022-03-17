@@ -1,0 +1,9 @@
+.app__reservation{
+    flex-direction: column;
+    color: var(--color-white);
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+}

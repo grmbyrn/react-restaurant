@@ -8,8 +8,8 @@
 }
 
 .app__aboutus-overlay img{
-    width: 391px;
-    height: 415px;
+    width: 850px;
+    height: 915px;
     z-index: 0;
 }
 
@@ -71,11 +71,18 @@
     .app__aboutus-content_knife{
         margin: 4rem 0;
     }
-}
 
-@media screen and (max-width: 650px){
     .app__aboutus-overlay img{
-        width: 80%;
-        height: 320px;
+        width: 750px;
+        height: 915px;
+        z-index: 0;
     }
 }
+
+/* @media screen and (max-width: 320px){
+    .app__aboutus-overlay img{
+        width: 20px;
+        height: 820px;
+        border: 1px solid red;
+    }
+} */
