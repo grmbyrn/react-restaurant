@@ -1,9 +1,5 @@
-.app__reservation{
-    flex-direction: column;
-    color: var(--color-white);
-}
-
-.form-control{
+.app__reservation-form{
     display: flex;
     flex-direction: column;
+    color: var(--color-white);
 }

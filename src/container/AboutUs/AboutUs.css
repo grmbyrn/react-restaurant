@@ -8,8 +8,8 @@
 }
 
 .app__aboutus-overlay img{
-    width: 850px;
-    height: 915px;
+    width: 350px;
+    height: 415px;
     z-index: 0;
 }
 
@@ -73,16 +73,14 @@
     }
 
     .app__aboutus-overlay img{
-        width: 750px;
-        height: 915px;
+        width: 350px;
         z-index: 0;
     }
 }
 
-/* @media screen and (max-width: 320px){
+@media screen and (max-width: 425px){
     .app__aboutus-overlay img{
-        width: 20px;
+        width: 200px;
         height: 820px;
-        border: 1px solid red;
     }
-} */
+}
