@@ -11,7 +11,6 @@ import gallery04 from '../assets/gallery04.png';
 import knife from '../assets/knife.png';
 import header from '../assets/header.png'
 import logo from '../assets/logo.png';
-// import meal from '../assets/meal.mov'
 import menu from '../assets/menu.png';
 import overlaybg from '../assets/overlaybg.png';
 import spoon from '../assets/spoon.svg';
