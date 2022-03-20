@@ -20,7 +20,7 @@ const Intro = () => {
 
     return (
     <div className='app__video'>
-      <video 
+      {/* <video 
         src={meal} 
         ref={vidRef}
         type='video/mov' 
@@ -35,7 +35,7 @@ const Intro = () => {
             <BsFillPlayFill color='#fff' fontSize={30} />
           }
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
