@@ -11,7 +11,7 @@ const Footer = () => (
     <Newsletter />
 
     <div className='app__footer-links'>
-      <div className='app__footer-links_contact'>
+      <div className='app__footer-links_contact' id='footer'>
         <h1 className='app__footer-headtext'>Contact Us</h1>
         <p className='p__opensans'>18 Suffolk Street, Dublin 2, Ireland</p>
         <p className='p__opensans'>01 677 5651</p>

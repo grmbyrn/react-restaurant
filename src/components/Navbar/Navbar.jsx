@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className='app__navbar-login'>
         <a href="https://deliveroo.ie/menu/dublin/dublin-2/pacino's" className='p__opensans'>Order Online</a>
         <div />
-        <a href='/' className='p__opensans'>Book Table</a>
+        <a href='#footer' className='p__opensans'>Book Table</a>
       </div>
       <div className='app__navbar-smallscreen'>
         <GiHamburgerMenu color='#fff' fontSize={27} style={{cursor: 'pointer'}} onClick={() => setToggleMenu(true)} />
