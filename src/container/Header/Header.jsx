@@ -45,7 +45,10 @@ const Header = () => {
         <SubHeading title='Chase the new flavour' />
         <h1 className='app__header-h1'>A unique Italian experience</h1>
         <p className='p__opensans' style={{margin: '2rem 0'}}>
-          I'm baby skateboard enamel pin photo booth cardigan air plant offal swag kinfolk chia semiotics. Messenger bag quinoa biodiesel pork belly, thundercats twee fanny pack irony cardigan godard street art letterpress chicharrones. Four dollar toast taxidermy DIY.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+        optio, eaque rerum!
         </p>
         <DropDownContainer>
           <button type='submit' className='custom__button' onClick={toggling}>Explore Menu</button>
